@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.image {
+  height: 160px;
+  object-fit: cover;
+  width: 100%;
+}
