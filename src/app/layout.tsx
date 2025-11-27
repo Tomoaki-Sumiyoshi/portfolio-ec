@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Header } from '@/components/header/Headerr';
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          <Header />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
